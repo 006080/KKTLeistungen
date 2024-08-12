@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       
-      <Router basename="/KKTLeistungen">
+      <Router >
         <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
