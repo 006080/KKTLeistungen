@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  background-color: #333; /* Background color for the header */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding around the header */
+  width: 100vw; /* Full viewport width */
+  box-sizing: border-box; /* Ensure padding is included in width */
+  position: fixed; /* Keep header fixed at the top */
+  top: 0; /* Position at the top of the viewport */
+  left: 0; /* Align to the left of the viewport */
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Style the navbar container */
+.navbar {
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: center; /* Center items horizontally */
+  width: 100%; /* Full width for the navbar */
+}
+
+/* Style the list inside the navbar */
+.navbar ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Arrange list items in a row */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: center; /* Center items horizontally */
+}
+
+/* Style each list item */
+.navbar li {
+  margin: 0 25px; /* Space between each list item */
+  padding: 5px; /* Padding inside each list item */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+/* Optional: Style for hover effect on list items */
+.navbar li:hover {
+  text-decoration: underline; /* Underline text on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .navbar li {
+    margin: 10px 0; /* Space between items when stacked */
+  }
+}
