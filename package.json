@@ -1,4 +1,5 @@
 {
+  "homepage": "https://006080.github.io/KKTLeistungen/",
   "name": "my-react-app",
   "private": true,
   "version": "0.0.0",
@@ -33,6 +34,6 @@
       "source": "/(.*)",
       "destination": "/"
     }
-  ],
-  "homepage": "https://006080.github.io/KKTLeistungen/"
+  ]
+
 }

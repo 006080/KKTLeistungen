@@ -3,7 +3,7 @@
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center items horizontally */
   justify-content: center; /* Center items vertically */
-  background-color: #333; /* Background color for the header */
+  background-color: #1d003d; /* Background color for the header */
   color: white; /* Text color */
   padding: 10px 20px; /* Padding around the header */
   width: 100vw; /* Full viewport width */
@@ -14,14 +14,14 @@
   z-index: 1000; /* Ensure it appears above other content */
 }
 
-/* Style the navbar container */
+
 .navbar {
+  align-items: center;
   display: flex; /* Use flexbox for horizontal layout */
   justify-content: center; /* Center items horizontally */
   width: 100%; /* Full width for the navbar */
 }
 
-/* Style the list inside the navbar */
 .navbar ul {
   list-style: none; /* Remove default list styling */
   padding: 0; /* Remove default padding */
@@ -31,14 +31,12 @@
   justify-content: center; /* Center items horizontally */
 }
 
-/* Style each list item */
 .navbar li {
   margin: 0 25px; /* Space between each list item */
   padding: 5px; /* Padding inside each list item */
   cursor: pointer; /* Change cursor on hover */
 }
 
-/* Optional: Style for hover effect on list items */
 .navbar li:hover {
   text-decoration: underline; /* Underline text on hover */
 }

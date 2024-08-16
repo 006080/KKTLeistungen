@@ -1,5 +1,6 @@
 import styles from "./Header.module.css";
 import { useNavigate } from "react-router-dom";
+import logo from "../src/img/Asset 1.png";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -11,6 +12,7 @@ const Header = () => {
   return (
     <div className={styles.header}>
       <div className={styles.navbar}>
+        <img src={logo} alt="" />
         <ul>
           <li onClick={() => handleNavigation("/")}>Home</li>
           <li onClick={() => handleNavigation("/history")}>History</li>
